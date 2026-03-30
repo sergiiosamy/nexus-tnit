@@ -12,73 +12,53 @@ body{
 
 /* NAV */
 .topbar{
-  padding:20px 0;
+  padding:20px;
   border-bottom:1px solid #222;
 }
 
 .topbar-inner{
   display:flex;
   justify-content:space-between;
-  align-items:center;
-}
-
-.brand{
-  font-size:20px;
-  font-weight:bold;
-  letter-spacing:2px;
 }
 
 .nav a{
-  margin:0 15px;
-  text-decoration:none;
+  margin:0 10px;
   color:#d4af37;
+  text-decoration:none;
 }
 
 /* HERO */
 .hero{
-  padding:80px 20px;
   text-align:center;
+  padding:80px 20px;
 }
 
-.hero-center{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
-
-/* LOGO ARRIBA */
 .hero-logo img{
-  width:350px;
-  max-width:90%;
-  margin-bottom:40px;
+  width:300px;
+  margin-bottom:30px;
 }
 
-/* TEXTO */
-.hero-text h1{
-  font-size:50px;
+.hero h1{
+  font-size:40px;
   margin-bottom:20px;
 }
 
-.hero-text p{
-  font-size:20px;
-  max-width:700px;
+.hero p{
+  max-width:600px;
   margin:auto;
   margin-bottom:30px;
 }
 
-/* BOTONES */
 .buttons{
   display:flex;
-  gap:15px;
   justify-content:center;
-  margin-bottom:20px;
+  gap:15px;
 }
 
 .btn{
   padding:15px 25px;
   border-radius:8px;
   text-decoration:none;
-  font-weight:bold;
 }
 
 .primary{
@@ -107,6 +87,27 @@ body{
 .service-card{
   padding:20px;
   border:1px solid #d4af37;
+}
+
+/* RESERVAS */
+.booking{
+  padding:80px 20px;
+  text-align:center;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  max-width:400px;
+  margin:auto;
+  gap:10px;
+}
+
+input, select{
+  padding:12px;
+  background:#111;
+  border:1px solid #d4af37;
+  color:#d4af37;
 }
 
 /* CONTACTO */
