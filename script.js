@@ -9,7 +9,6 @@ function enviarWhatsApp(){
   let hora = document.getElementById("hora").value;
 
   let mensaje = `Hola, quiero agendar una cita:
-  
 Nombre: ${nombre}
 Teléfono: ${telefono}
 Vehículo: ${vehiculo}
@@ -18,7 +17,11 @@ Polarizado: ${polarizado}
 Fecha: ${fecha}
 Hora: ${hora}`;
 
-  let url = "https://wa.me/12244910412?text=" + encodeURIComponent(mensaje);
+  window.open("https://wa.me/12244910412?text=" + encodeURIComponent(mensaje));
+}
 
-  window.open(url, "_blank");
+function cambiarIdioma(idioma){
+  document.querySelectorAll("[data-es]").forEach(el=>{
+    el.innerText = el.getAttribute("data-" + idioma);
+  });
 }
