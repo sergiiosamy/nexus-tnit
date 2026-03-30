@@ -8,115 +8,229 @@
 </head>
 <body>
 
-<header class="topbar">
-  <div class="container topbar-inner">
-    <div class="brand">NEXUS TINT</div>
+  <div class="amg-bg"></div>
+  <div class="amg-lines"></div>
+  <div class="amg-glow amg-glow-left"></div>
+  <div class="amg-glow amg-glow-right"></div>
 
-    <nav class="nav">
-      <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
-      <a href="#servicios" data-es="Servicios" data-en="Services">Servicios</a>
-      <a href="#reservas" data-es="Reservas" data-en="Bookings">Reservas</a>
-      <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
-    </nav>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">NEXUS TINT</div>
 
-    <div class="lang">
-      <button onclick="cambiarIdioma('es')">ES</button>
-      <button onclick="cambiarIdioma('en')">EN</button>
+      <nav class="nav">
+        <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+        <a href="#servicios" data-es="Servicios" data-en="Services">Servicios</a>
+        <a href="#reservas" data-es="Reservas" data-en="Bookings">Reservas</a>
+        <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+      </nav>
+
+      <div class="lang">
+        <button id="btn-es" type="button" class="lang-btn active">ES</button>
+        <button id="btn-en" type="button" class="lang-btn">EN</button>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<section class="hero" id="inicio">
-  <div class="container hero-center">
+  <section class="hero" id="inicio">
+    <div class="container hero-center">
 
-    <img src="logo.png" class="logo">
+      <img src="logo.png" class="logo" alt="Logo Nexus Tint">
 
-    <h1 data-es="Convierte tu vehículo en una experiencia de lujo"
+      <div class="hero-badge"
+           data-es="Taller premium • Chicago"
+           data-en="Premium shop • Chicago">
+        Taller premium • Chicago
+      </div>
+
+      <h1
+        data-es="Convierte tu vehículo en una experiencia de lujo"
         data-en="Turn your vehicle into a luxury experience">
-      Convierte tu vehículo en una experiencia de lujo
-    </h1>
+        Convierte tu vehículo en una experiencia de lujo
+      </h1>
 
-    <p data-es="Polarizados premium, iluminación, cámaras y mejoras diseñadas para una apariencia elegante y exclusiva."
-       data-en="Premium tint, lighting, cameras and upgrades designed for an elegant and exclusive look.">
-      Polarizados premium, iluminación, cámaras y mejoras diseñadas para una apariencia elegante y exclusiva.
-    </p>
+      <p
+        data-es="Polarizados premium, iluminación, cámaras y mejoras diseñadas para una apariencia elegante y exclusiva."
+        data-en="Premium tint, lighting, cameras and upgrades designed for an elegant and exclusive look.">
+        Polarizados premium, iluminación, cámaras y mejoras diseñadas para una apariencia elegante y exclusiva.
+      </p>
 
-    <div class="buttons">
-      <a href="#reservas" class="btn primary"
-         data-es="Reservar cita"
-         data-en="Book appointment">Reservar cita</a>
+      <div class="buttons">
+        <a href="#reservas" class="btn primary"
+           data-es="Reservar cita"
+           data-en="Book appointment">
+          Reservar cita
+        </a>
 
-      <a href="https://wa.me/12244910412" target="_blank" class="btn secondary">
-        WhatsApp
-      </a>
+        <a href="https://wa.me/12244910412" target="_blank" class="btn secondary"
+           data-es="WhatsApp"
+           data-en="WhatsApp">
+          WhatsApp
+        </a>
+      </div>
+
+      <div class="hero-note"
+           data-es="Después de tu reserva te mostramos las mejores opciones para tu vehículo."
+           data-en="After your reservation, we show you the best options for your vehicle.">
+        Después de tu reserva te mostramos las mejores opciones para tu vehículo.
+      </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-mini"
+              data-es="SERVICIOS PREMIUM"
+              data-en="PREMIUM SERVICES">
+          SERVICIOS PREMIUM
+        </span>
 
-<section class="services" id="servicios">
-  <div class="container">
-    <h2 data-es="Servicios premium" data-en="Premium services">Servicios premium</h2>
+        <h2
+          data-es="Diseñado para vehículos que merecen una presencia más poderosa"
+          data-en="Designed for vehicles that deserve a more powerful presence">
+          Diseñado para vehículos que merecen una presencia más poderosa
+        </h2>
+      </div>
 
-    <div class="services-grid">
-      <div class="card">Polarizado automotriz</div>
-      <div class="card">Luces LED premium</div>
-      <div class="card">Cámara de reversa</div>
-      <div class="card">Pantallas y radios</div>
-      <div class="card">Accesorios de lujo</div>
-      <div class="card">Instalación profesional</div>
+      <div class="services-grid">
+        <div class="card" data-es="Polarizado automotriz" data-en="Automotive tint">Polarizado automotriz</div>
+        <div class="card" data-es="Luces LED premium" data-en="Premium LED lights">Luces LED premium</div>
+        <div class="card" data-es="Cámara de reversa" data-en="Backup camera">Cámara de reversa</div>
+        <div class="card" data-es="Pantallas y radios" data-en="Screens and radios">Pantallas y radios</div>
+        <div class="card" data-es="Accesorios de lujo" data-en="Luxury accessories">Accesorios de lujo</div>
+        <div class="card" data-es="Instalación profesional" data-en="Professional installation">Instalación profesional</div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="booking" id="reservas">
-  <div class="container">
+  <section class="booking" id="reservas">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-mini"
+              data-es="RESERVAS"
+              data-en="BOOKINGS">
+          RESERVAS
+        </span>
 
-    <h2 data-es="Reserva tu cita" data-en="Book your appointment">Reserva tu cita</h2>
+        <h2
+          data-es="Reserva tu cita"
+          data-en="Book your appointment">
+          Reserva tu cita
+        </h2>
 
-    <form class="form">
+        <p class="booking-intro"
+           data-es="Déjanos tus datos y envía tu solicitud directamente por WhatsApp con toda la información lista."
+           data-en="Leave us your information and send your request directly through WhatsApp with everything ready.">
+          Déjanos tus datos y envía tu solicitud directamente por WhatsApp con toda la información lista.
+        </p>
+      </div>
 
-      <input id="nombre" placeholder="Nombre">
-      <input id="telefono" placeholder="Teléfono">
-      <input id="vehiculo" placeholder="Vehículo">
+      <form class="form" id="bookingForm">
+        <div class="form-grid">
+          <input id="nombre" type="text" placeholder="Nombre completo"
+                 data-es-ph="Nombre completo"
+                 data-en-ph="Full name">
 
-      <select id="servicio">
-        <option>Servicio</option>
-        <option>Polarizado</option>
-        <option>Luces</option>
-        <option>Cámara</option>
-        <option>Radio</option>
-      </select>
+          <input id="telefono" type="text" placeholder="Teléfono"
+                 data-es-ph="Teléfono"
+                 data-en-ph="Phone">
 
-      <select id="polarizado">
-        <option>% polarizado</option>
-        <option>5%</option>
-        <option>15%</option>
-        <option>20%</option>
-        <option>35%</option>
-      </select>
+          <input id="vehiculo" type="text" placeholder="Vehículo"
+                 data-es-ph="Vehículo"
+                 data-en-ph="Vehicle">
 
-      <input type="date" id="fecha">
-      <input type="time" id="hora">
+          <select id="servicio">
+            <option data-es="Servicio" data-en="Service">Servicio</option>
+            <option data-es="Polarizado" data-en="Tint">Polarizado</option>
+            <option data-es="Luces" data-en="Lighting">Luces</option>
+            <option data-es="Cámara" data-en="Camera">Cámara</option>
+            <option data-es="Radio" data-en="Radio">Radio</option>
+          </select>
 
-      <button type="button" onclick="enviarWhatsApp()" class="btn primary">
-        Enviar por WhatsApp
-      </button>
+          <select id="polarizado">
+            <option data-es="% polarizado" data-en="Tint %">% polarizado</option>
+            <option>5%</option>
+            <option>15%</option>
+            <option>20%</option>
+            <option>35%</option>
+            <option>50%</option>
+          </select>
 
-    </form>
+          <input id="fecha" type="date">
+          <input id="hora" type="time">
 
-  </div>
-</section>
+          <textarea id="comentarios"
+                    placeholder="Cuéntanos qué deseas hacer"
+                    data-es-ph="Cuéntanos qué deseas hacer"
+                    data-en-ph="Tell us what you want to do"></textarea>
+        </div>
 
-<section class="contact" id="contacto">
-  <div class="container">
-    <h2>Contacto</h2>
-    <p>📞 224-491-0412</p>
-    <p>📧 nexustintc@gmail.com</p>
-  </div>
-</section>
+        <button type="button"
+                onclick="enviarWhatsApp()"
+                class="btn primary submit-btn"
+                data-es="Enviar por WhatsApp"
+                data-en="Send via WhatsApp">
+          Enviar por WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-mini"
+              data-es="CONTACTO"
+              data-en="CONTACT">
+          CONTACTO
+        </span>
 
+        <h2
+          data-es="Todos nuestros datos de contacto"
+          data-en="All our contact details">
+          Todos nuestros datos de contacto
+        </h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3 data-es="Teléfono" data-en="Phone">Teléfono</h3>
+          <p>224-491-0412</p>
+        </div>
+
+        <div class="contact-card">
+          <h3 data-es="WhatsApp" data-en="WhatsApp">WhatsApp</h3>
+          <p>+1 224-491-0412</p>
+        </div>
+
+        <div class="contact-card">
+          <h3 data-es="Correo" data-en="Email">Correo</h3>
+          <p>nexustintc@gmail.com</p>
+        </div>
+
+        <div class="contact-card">
+          <h3 data-es="Servicio móvil" data-en="Mobile service">Servicio móvil</h3>
+          <p data-es="Disponible en Chicago" data-en="Available in Chicago">Disponible en Chicago</p>
+        </div>
+      </div>
+
+      <div class="buttons contact-buttons">
+        <a href="https://wa.me/12244910412" target="_blank" class="btn primary"
+           data-es="Escribir por WhatsApp"
+           data-en="Message on WhatsApp">
+          Escribir por WhatsApp
+        </a>
+
+        <a href="mailto:nexustintc@gmail.com" class="btn secondary"
+           data-es="Enviar correo"
+           data-en="Send email">
+          Enviar correo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
