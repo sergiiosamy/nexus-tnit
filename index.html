@@ -13,62 +13,72 @@
     <div class="brand">NEXUS TINT</div>
 
     <nav class="nav">
-      <a href="#inicio">Inicio</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#reservas">Reservas</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="#servicios" data-es="Servicios" data-en="Services">Servicios</a>
+      <a href="#reservas" data-es="Reservas" data-en="Bookings">Reservas</a>
+      <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
+
+    <div class="lang">
+      <button onclick="cambiarIdioma('es')">ES</button>
+      <button onclick="cambiarIdioma('en')">EN</button>
+    </div>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero" id="inicio">
   <div class="container hero-center">
 
-    <div class="hero-logo">
-      <img src="logo.png" alt="Nexus Tint Logo">
-    </div>
+    <img src="logo.png" class="logo">
 
-    <h1>Convierte tu vehículo en una experiencia de lujo</h1>
+    <h1 data-es="Convierte tu vehículo en una experiencia de lujo"
+        data-en="Turn your vehicle into a luxury experience">
+      Convierte tu vehículo en una experiencia de lujo
+    </h1>
 
-    <p>
-      Polarizados premium, iluminación, cámaras y mejoras diseñadas para quienes buscan una apariencia elegante, moderna y exclusiva.
+    <p data-es="Polarizados premium, iluminación, cámaras y mejoras diseñadas para una apariencia elegante y exclusiva."
+       data-en="Premium tint, lighting, cameras and upgrades designed for an elegant and exclusive look.">
+      Polarizados premium, iluminación, cámaras y mejoras diseñadas para una apariencia elegante y exclusiva.
     </p>
 
     <div class="buttons">
-      <a href="#reservas" class="btn primary">Reservar cita</a>
-      <a href="https://wa.me/12244910412" target="_blank" class="btn secondary">WhatsApp</a>
+      <a href="#reservas" class="btn primary"
+         data-es="Reservar cita"
+         data-en="Book appointment">Reservar cita</a>
+
+      <a href="https://wa.me/12244910412" target="_blank" class="btn secondary">
+        WhatsApp
+      </a>
     </div>
 
   </div>
 </section>
 
-<!-- SERVICIOS -->
 <section class="services" id="servicios">
   <div class="container">
-    <h2>Nuestros servicios</h2>
+    <h2 data-es="Servicios premium" data-en="Premium services">Servicios premium</h2>
 
     <div class="services-grid">
-      <div class="service-card">Polarizado automotriz</div>
-      <div class="service-card">Polarizado residencial</div>
-      <div class="service-card">Polarizado comercial</div>
-      <div class="service-card">Luces premium</div>
-      <div class="service-card">Cámara de reversa</div>
-      <div class="service-card">Radios y pantallas</div>
+      <div class="card">Polarizado automotriz</div>
+      <div class="card">Luces LED premium</div>
+      <div class="card">Cámara de reversa</div>
+      <div class="card">Pantallas y radios</div>
+      <div class="card">Accesorios de lujo</div>
+      <div class="card">Instalación profesional</div>
     </div>
   </div>
 </section>
 
-<!-- RESERVAS -->
 <section class="booking" id="reservas">
   <div class="container">
-    <h2>Reserva tu cita</h2>
 
-    <form id="formulario">
+    <h2 data-es="Reserva tu cita" data-en="Book your appointment">Reserva tu cita</h2>
 
-      <input type="text" id="nombre" placeholder="Nombre completo" required>
-      <input type="text" id="telefono" placeholder="Teléfono" required>
-      <input type="text" id="vehiculo" placeholder="Vehículo" required>
+    <form class="form">
+
+      <input id="nombre" placeholder="Nombre">
+      <input id="telefono" placeholder="Teléfono">
+      <input id="vehiculo" placeholder="Vehículo">
 
       <select id="servicio">
         <option>Servicio</option>
@@ -79,12 +89,11 @@
       </select>
 
       <select id="polarizado">
-        <option>% de polarizado</option>
+        <option>% polarizado</option>
         <option>5%</option>
         <option>15%</option>
         <option>20%</option>
         <option>35%</option>
-        <option>50%</option>
       </select>
 
       <input type="date" id="fecha">
@@ -95,17 +104,15 @@
       </button>
 
     </form>
+
   </div>
 </section>
 
-<!-- CONTACTO -->
 <section class="contact" id="contacto">
   <div class="container">
     <h2>Contacto</h2>
-
-    <p>Teléfono: 224-491-0412</p>
-    <p>Email: nexustintc@gmail.com</p>
-    <p>Servicio móvil en Chicago</p>
+    <p>📞 224-491-0412</p>
+    <p>📧 nexustintc@gmail.com</p>
   </div>
 </section>
 
