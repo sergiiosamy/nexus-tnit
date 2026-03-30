@@ -37,21 +37,21 @@ body{
 .bg-layer{
   position:fixed;
   inset:0;
-  background:
-    linear-gradient(180deg, #000 0%, #040404 40%, #080808 100%);
+  background:linear-gradient(180deg, #000 0%, #040404 40%, #080808 100%);
   z-index:-4;
 }
 
 .bg-layer::before{
   content:"AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG";
   position:absolute;
-  inset:-25%;
-  font-size:120px;
-  font-weight:800;
-  line-height:180px;
-  letter-spacing:36px;
-  color:rgba(212,175,55,0.03);
-  transform:rotate(-24deg);
+  inset:-30%;
+  font-family:'Orbitron', Arial, sans-serif;
+  font-size:110px;
+  font-weight:700;
+  line-height:160px;
+  letter-spacing:30px;
+  color:rgba(212,175,55,0.035);
+  transform:rotate(-22deg);
   display:flex;
   flex-wrap:wrap;
   align-content:center;
