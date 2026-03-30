@@ -6,23 +6,17 @@ function cambiarIdioma(idioma){
 
   document.querySelectorAll("[data-es][data-en]").forEach((el) => {
     const text = el.getAttribute(`data-${idioma}`);
-    if (text) {
-      el.textContent = text;
-    }
+    if (text) el.textContent = text;
   });
 
   document.querySelectorAll("[data-es-ph][data-en-ph]").forEach((el) => {
     const ph = el.getAttribute(`data-${idioma}-ph`);
-    if (ph) {
-      el.placeholder = ph;
-    }
+    if (ph) el.placeholder = ph;
   });
 
   document.querySelectorAll("option[data-es][data-en]").forEach((el) => {
     const text = el.getAttribute(`data-${idioma}`);
-    if (text) {
-      el.textContent = text;
-    }
+    if (text) el.textContent = text;
   });
 
   btnEs.classList.toggle("active", idioma === "es");
