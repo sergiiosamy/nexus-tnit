@@ -33,55 +33,57 @@ body{
   margin:0 auto;
 }
 
-/* FONDO TIPO PERFORMANCE */
+/* FONDO PRINCIPAL */
 .bg-layer{
   position:fixed;
   inset:0;
   background:linear-gradient(180deg, #000 0%, #040404 40%, #080808 100%);
-  z-index:-4;
+  z-index:-5;
   overflow:hidden;
 }
 
-/* LETRAS AMG DE FONDO, ESTILO MÁS AGRESIVO */
+/* TEXTO DE FONDO, ESTILO PERFORMANCE */
 .bg-layer::before{
-  content:"AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG";
+  content:"//// AMG    //// AMG    //// AMG    //// AMG    //// AMG    //// AMG    //// AMG    //// AMG    //// AMG    //// AMG";
   position:absolute;
   inset:-28%;
   font-family:'Orbitron', Arial, sans-serif;
-  font-size:122px;
+  font-size:108px;
   font-weight:700;
-  line-height:168px;
-  letter-spacing:22px;
-  color:rgba(212,175,55,0.045);
-  transform:rotate(-22deg) skewX(-16deg);
+  line-height:160px;
+  letter-spacing:8px;
+  color:rgba(212,175,55,0.040);
+  transform:rotate(-21deg) skewX(-12deg) scaleX(1.12);
   display:flex;
   flex-wrap:wrap;
   align-content:center;
   justify-content:center;
   text-transform:uppercase;
+  white-space:pre-wrap;
   pointer-events:none;
   text-shadow:
-    2px 0 0 rgba(212,175,55,0.02),
-    -2px 0 0 rgba(212,175,55,0.02),
-    0 0 18px rgba(212,175,55,0.02);
+    1px 0 0 rgba(212,175,55,0.02),
+    -1px 0 0 rgba(212,175,55,0.02),
+    0 0 12px rgba(212,175,55,0.018);
 }
 
-/* LÍNEAS TÉCNICAS DE FONDO */
+/* CAPA DE LÍNEAS TÉCNICAS */
 .bg-layer::after{
   content:"";
   position:absolute;
   inset:0;
   background:
     repeating-linear-gradient(
-      125deg,
+      124deg,
       rgba(255,255,255,0.012) 0px,
       rgba(255,255,255,0.012) 2px,
       transparent 2px,
-      transparent 74px
+      transparent 76px
     );
-  opacity:0.34;
+  opacity:0.28;
 }
 
+/* GLOWS */
 .bg-glow{
   position:fixed;
   width:340px;
@@ -89,7 +91,7 @@ body{
   border-radius:50%;
   filter:blur(120px);
   opacity:0.10;
-  z-index:-3;
+  z-index:-4;
 }
 
 .glow-a{
@@ -104,7 +106,7 @@ body{
   right:-120px;
 }
 
-/* TOPBAR */
+/* BARRA SUPERIOR */
 .topbar{
   position:sticky;
   top:0;
@@ -480,7 +482,7 @@ input:focus, select:focus{
 
   .bg-layer::before{
     font-size:84px;
-    letter-spacing:18px;
+    letter-spacing:12px;
     line-height:120px;
   }
 }
