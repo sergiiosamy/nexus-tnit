@@ -33,32 +33,40 @@ body{
   margin:0 auto;
 }
 
-/* FONDO AMG */
+/* FONDO TIPO PERFORMANCE */
 .bg-layer{
   position:fixed;
   inset:0;
   background:linear-gradient(180deg, #000 0%, #040404 40%, #080808 100%);
   z-index:-4;
+  overflow:hidden;
 }
 
+/* LETRAS AMG DE FONDO, ESTILO MÁS AGRESIVO */
 .bg-layer::before{
-  content:"AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG AMG";
+  content:"AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG  AMG";
   position:absolute;
-  inset:-30%;
+  inset:-28%;
   font-family:'Orbitron', Arial, sans-serif;
-  font-size:110px;
+  font-size:122px;
   font-weight:700;
-  line-height:160px;
-  letter-spacing:30px;
-  color:rgba(212,175,55,0.035);
-  transform:rotate(-22deg);
+  line-height:168px;
+  letter-spacing:22px;
+  color:rgba(212,175,55,0.045);
+  transform:rotate(-22deg) skewX(-16deg);
   display:flex;
   flex-wrap:wrap;
   align-content:center;
   justify-content:center;
+  text-transform:uppercase;
   pointer-events:none;
+  text-shadow:
+    2px 0 0 rgba(212,175,55,0.02),
+    -2px 0 0 rgba(212,175,55,0.02),
+    0 0 18px rgba(212,175,55,0.02);
 }
 
+/* LÍNEAS TÉCNICAS DE FONDO */
 .bg-layer::after{
   content:"";
   position:absolute;
@@ -66,12 +74,12 @@ body{
   background:
     repeating-linear-gradient(
       125deg,
-      rgba(255,255,255,0.015) 0px,
-      rgba(255,255,255,0.015) 2px,
+      rgba(255,255,255,0.012) 0px,
+      rgba(255,255,255,0.012) 2px,
       transparent 2px,
       transparent 74px
     );
-  opacity:0.35;
+  opacity:0.34;
 }
 
 .bg-glow{
@@ -468,5 +476,11 @@ input:focus, select:focus{
 
   .booking-form{
     padding:24px;
+  }
+
+  .bg-layer::before{
+    font-size:84px;
+    letter-spacing:18px;
+    line-height:120px;
   }
 }
